@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why cookies are good</title>
+    <style>
+        ul{
+            overflow: hidden;
+            background-color: burlywood;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            padding: 16px;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            background-color: brown;
+        }
+        .header{
+            background-color: lightblue;
+            grid-area: header;
+            font-size: 30px;
+        }
+        .section1{
+            background-color: gold;
+            grid-area: section1;
+            font-size: 50px;
+        }
+        .section2{
+            background-color: lightcoral;
+            grid-area: section2;
+        }
+        .section3{
+            background-color: gold;
+            grid-area: section3;
+            font-size: 50px;
+        }
+        .footer{
+            background-color: orange;
+            grid-area: footer;
+            font-size: 50px;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'section1 section2 section3'
+            'footer footer footer';
+        }
+        .gridcontainer > div{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href = "cookies.html">A boring game</a></li>
+        <li><a href = "cookiegood.html">READ PLEASE</a></li>
+    </ul>
+    <div class = "gridcontainer">
+        <div class = "header">cookies are very good because it is very tasty and very healthy to you because of how much sugar there are. This is proven by the sugar according to the website "liesandbullshit" <a href = "https://sites.google.com/view/liesandbulshit-sugarisgoodforu/home">here</a> is the link to their artical</div>
+        <div class = "section1">--></div>
+        <div class = "section2"><img src = "cookie.jpeg"></div>
+        <div class = "section3"><--</div>
+        <div class = "footer">Press "F" to pay respect</div>
+    </div>
+</body>
+</html>

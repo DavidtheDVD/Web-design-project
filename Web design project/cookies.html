@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKIES</title>
+    <style>
+        ul{
+            overflow: hidden;
+            background-color: burlywood;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            padding: 16px;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            background-color: brown;
+        }
+        h1{
+            color: brown;
+            font-size: 20px;
+        }
+        div{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href = "cookies.html">A boring game</a></li>
+        <li><a href = "cookiegood.html">READ PLEASE</a></li>
+    </ul>
+    <h1>COOKIES VERY GOOD AND YUMMY</h1>
+    <img id = "image" src = "cookie.jpeg">
+    <br>
+    <button id = "cookieclick">CLICK FOR COOKIES</button>
+    <br>
+    <div id = "displayClicks">clicks = 0</div>
+    <br>
+    <div id = "displayMoney">money = 0</div>
+    <br>
+    <div>Goal: Get 10 money</div>
+    <script>
+        var clicks = 0;
+        var money = 0
+        var image = document.getElementById("image");
+        function clickcookie(){
+            clicks++;
+        if(clicks%10 == 0){
+            money++;
+        }
+        }
+        function printClicks(){
+            document.getElementById("displayClicks").innerHTML = "Clicks = " + clicks;
+        }
+        function printMoney(){
+            document.getElementById("displayMoney").innerHTML = "Money = " + money;
+        }
+        document.getElementById("cookieclick").addEventListener("click", clickcookie);
+        document.getElementById("cookieclick").addEventListener("click", printClicks);
+        document.getElementById("cookieclick").addEventListener("click", printMoney);
+    </script>
+</body>
+</html>
